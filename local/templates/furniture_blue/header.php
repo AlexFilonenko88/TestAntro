@@ -21,7 +21,7 @@ if (!defined ('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 	?>
 </head>
 <body>
-
+<?php $APPLICATION->ShowPanel();?>
 <main>
 
 </body>
