@@ -13,6 +13,7 @@ if (!defined ('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)
 	<meta name="HandheldFriendly" content="true" >
 	<meta name="MobileOptimized" content="width">
 	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="stylesheet" href="/local/templates/furniture_blue/css/custom.css">
 	<title><?php $APPLICATION->ShowTitle();?></title>
 	<?php
 	$APPLICATION->ShowHead();
