@@ -43,8 +43,12 @@ foreach($arResult["ITEMS"] as $cell=>$arElement):
 				<div class="old_price"></div>
 			</div>
 			<div class="size">
-				<div class="zagprop"><?//=$arElement["PROPERTIES"]["COLOR"]["NAME"]?></div>
-				<div class="spisoksize"></div>		
+				<div class="zagprop"><?=$arElement["PROPERTIES"]["SIZE"]["NAME"]?></div>
+				<div class="spisoksize">
+					<?foreach($arElement["PROPERTIES"]["SIZE"]["VALUE_XML_ID"] as $sizeItem){?>
+						<div class="size_item"><?=$sizeItem?></div>
+					<?}?>
+				</div>		
 			</div>
 		</div>
 	</div>
