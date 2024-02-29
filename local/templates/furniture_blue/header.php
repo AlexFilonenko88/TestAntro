@@ -12,6 +12,10 @@ if (!defined ('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true){die();}
 	<meta name="MobileOptimized" content="width">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<link rel="stylesheet" href="/local/templates/furniture_blue/css/custom.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
 	<title><?php $APPLICATION->ShowTitle();?></title>
 	<?php
 	$APPLICATION->ShowHead();
