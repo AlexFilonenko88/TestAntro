@@ -18,7 +18,7 @@
 	$component
 );?>
 <br />
-<?if($arParams["USE_FILTER"]=="Y"):?>
+<?// if($arParams["USE_FILTER"]=="Y"):?>
 <?$APPLICATION->IncludeComponent(
 	"bitrix:catalog.filter",
 	"",
@@ -37,7 +37,7 @@
 );
 ?>
 <br />
-<?endif?>
+<?// endif?>
 <?if($arParams["USE_COMPARE"]=="Y"):?>
 <?$APPLICATION->IncludeComponent(
 	"bitrix:catalog.compare.list",
@@ -70,7 +70,7 @@
 		"ACTION_VARIABLE" => $arParams["ACTION_VARIABLE"],
 		"PRODUCT_ID_VARIABLE" => $arParams["PRODUCT_ID_VARIABLE"],
 		"SECTION_ID_VARIABLE" => $arParams["SECTION_ID_VARIABLE"],
-		"FILTER_NAME" => $arParams["FILTER_NAME"],
+		"FILTER_NAME" => "arrFilter",
 		"DISPLAY_PANEL" => $arParams["DISPLAY_PANEL"],
 		"CACHE_TYPE" => $arParams["CACHE_TYPE"],
 		"CACHE_TIME" => $arParams["CACHE_TIME"],
