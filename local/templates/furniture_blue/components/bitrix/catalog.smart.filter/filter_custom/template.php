@@ -165,6 +165,7 @@ $this->addExternalCss("/bitrix/css/main/font-awesome.css");
 						continue;
 					?>
 					<div class="<?if ($arParams["FILTER_VIEW_MODE"] == "HORIZONTAL"):?>col-sm-6 col-md-4<?else:?>col-lg-12<?endif?> bx-filter-parameters-box <?if ($arItem["DISPLAY_EXPANDED"]== "Y"):?>bx-active<?endif?>">
+
 						<span class="bx-filter-container-modef"></span>
 						<div class="bx-filter-parameters-box-title" onclick="smartFilter.hideFilterProps(this)">
 							<span class="bx-filter-parameters-box-hint"><?=$arItem["NAME"]?>
@@ -419,7 +420,7 @@ $this->addExternalCss("/bitrix/css/main/font-awesome.css");
 												<div class="bx-filter-select-popup" data-role="dropdownContent" style="display: none;">
 													<ul>
 														<li>
-															<label for="<?="all_".$arCur["CONTROL_ID"]?>" class="bx-filter-param-label" data-role="label_<?="all_".$arCur["CONTROL_ID"]?>" onclick="smartFilter.selectDropDownItem(this, '<?=CUtil::JSEscape("all_".$arCur["CONTROL_ID"])?>')">
+															<label  <?if($ar["CONTROL_ID"] == 'arrFilter_10_1330857165'){?>data-xmlid="<?=$ar["URL_ID"]?>"<?}?> for="<?="all_".$arCur["CONTROL_ID"]?>" class="bx-filter-param-label" data-role="label_<?="all_".$arCur["CONTROL_ID"]?>" onclick="smartFilter.selectDropDownItem(this, '<?=CUtil::JSEscape("all_".$arCur["CONTROL_ID"])?>')">
 																<? echo GetMessage("CT_BCSF_FILTER_ALL"); ?>
 															</label>
 														</li>
@@ -432,7 +433,7 @@ $this->addExternalCss("/bitrix/css/main/font-awesome.css");
 															$class.= " disabled";
 													?>
 														<li>
-															<label for="<?=$ar["CONTROL_ID"]?>" class="bx-filter-param-label<?=$class?>" data-role="label_<?=$ar["CONTROL_ID"]?>" onclick="smartFilter.selectDropDownItem(this, '<?=CUtil::JSEscape($ar["CONTROL_ID"])?>')"><?=$ar["VALUE"]?></label>
+															<label  <?if($ar["CONTROL_ID"] == 'arrFilter_10_1330857165'){?>data-xmlid="<?=$ar["URL_ID"]?>"<?}?> for="<?=$ar["CONTROL_ID"]?>" class="bx-filter-param-label<?=$class?>" data-role="label_<?=$ar["CONTROL_ID"]?>" onclick="smartFilter.selectDropDownItem(this, '<?=CUtil::JSEscape($ar["CONTROL_ID"])?>')"><?=$ar["VALUE"]?></label>
 														</li>
 													<?endforeach?>
 													</ul>

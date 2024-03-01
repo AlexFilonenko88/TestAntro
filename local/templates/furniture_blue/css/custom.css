@@ -173,47 +173,184 @@ body .bx-filter .bx-filter-parameters-box-title span{
     cursor: pointer;
     text-decoration-style: solid;
 }
+.heart {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+    cursor: pointer;
+}
+.heart.active {
+    width: 10px;
+    height: 10px;
+    background: #000;
+    border: 1px solid #000;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+    cursor: pointer;
+}
 
+.imagblock .image, .only_imagblock .image{
+    position: relative;
+}
+.catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.catalog_item {
+    width: 24%;
+    margin-right: 1%;
+}
 
+.mainpage .title span {
+    font-family: Tenor Sans, sans-serif;
+    color: #969696;
+    font-size: 18px;
+    position: absolute;
+    right: 105px;
+}
 
+.mainpage .title {
+    position: relative;
+}
 
+.mainpage .bx-filter.bx-blue .bx-filter-section form .row {
+    display: flex;
+}
 
+.fa-angle-down:before {
+    color: #282828;
+}
 
+body .bx-filter .bx-filter-parameters-box-title span {
+    border-bottom: 1px solid #282828;
+}
 
+.bx-filter .bx-filter-parameters-box-title span:hover {
+    border-color: #282828 !important;
+}
 
+.mainpage .bx-filter.bx-blue .bx-filter-section form {
+    display: flex;
+    justify-content: space-between;
+}
 
+.catalog_item {
+    width: 32%;
+    margin-right: 1%;
+}
 
+.mainpage .slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: black;
+}
 
+.mainpage .slick-dots li button:before {
+    width: 85px;
+    height: 3px;
+}
 
+.mainpage .slick-dots li button {
+    width: 85px;
+    height: 3px;
+    padding: 0;
+}
 
+.mainpage .slick-dots li {
+    width: 80px;
+    height: 3px;
+}
 
+.mainpage .slick-dots li button:before {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 85px;
+    height: 3px;
+    background: #282828;
 
+}
 
+.mainpage .slick-dots {
+    bottom: unset;
+    top: 0;
+}
 
+.heart::before {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 26px;
+    height: 26px;
+    background: url(/upload/Wishlist.svg);
+}
 
+.heart {
+    width: 26px;
+    height: 26px;
+    border: 0;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    z-index: 999;
+    cursor: pointer;
+}
 
+.heart.active {
+    width: 26px;
+    height: 26px;
+    background: none;
+    border: 0;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    z-index: 999;
+    cursor: pointer;
+}
 
+.mainpage .slick-dotted.slick-slider {
+    margin-bottom: 10px;
+}
 
+.catalog_title a {
+    font-family: Nunito Sans, sans-serif;
+    font-size: 18px;
+    color: #282828;
+    font-weight: 600;
+}
 
+.rating_review {
+    display: flex;
+    padding-top: 2px;
+}
 
+.rating_review div {
+    font-family: Nunito Sans, sans-serif;
+    font-weight: 400;
+    color: #535353;
+    font-size: 14px;
+}
 
+.rating {
+    padding-right: 10px;
+    padding-left: 18px;
+    position: relative;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.rating::before {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 16px;
+    height: 16px;
+    background: url(/upload/Star.svg);
+    left: 0;
+}
 
 
 

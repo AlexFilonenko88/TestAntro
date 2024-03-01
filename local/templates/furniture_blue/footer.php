@@ -13,6 +13,13 @@ if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true)die();
         slidesToShow: 1,
         slidesToScroll: 1
     });
+
+    $('.imagblock').each(function(){
+        var heart = $(this).find('.heart');
+        heart.click(function(){
+            $(this).toggleClass('active');
+        });
+    });
 </script>
 
 </body>
